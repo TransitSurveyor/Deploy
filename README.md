@@ -27,4 +27,4 @@ find an `api` and `data` folder inside this directory.
 + `api` contains a [local git repo](https://github.com/TransitSurveyor/API)
 that is the code running on the vm.
 + `data` contains a [local git repo](https://github.com/TransitSurveyor/Data)
-that is the code build data dependencies.
+that is the code to build data dependencies.
