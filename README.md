@@ -4,6 +4,8 @@ This repo contains a vagrant project to deploy the
 [API](https://github.com/TransitSurveyor/API) component. You must have
 [Vagrant](https://docs.vagrantup.com/v2/installation/index.html) and
 [VirtualBox](https://www.virtualbox.org/wiki/Linux_Downloads) installed.
+This is still a work in progress. Next steps will be to get the postgres
+instance setup and loaded with data.
 
 ### setup
 
