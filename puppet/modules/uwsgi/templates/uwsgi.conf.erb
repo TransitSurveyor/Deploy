@@ -1,0 +1,6 @@
+description "flask uWSGI"
+
+start on runlevel [2345]
+stop on runlevel [06]
+
+exec /usr/local/bin/uwsgi <% @params.each_pair do | param, val | %> --<%= param %> <%= val %> <% end %>
