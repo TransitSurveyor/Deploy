@@ -14,6 +14,8 @@ class python::packages {
         'build-essential',
         'python-pip',
         'postgresql-server-dev-9.3',
+        'unzip',
+        'gdal-bin',
     ]
     
     $pip = [

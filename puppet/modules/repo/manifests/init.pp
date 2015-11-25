@@ -10,7 +10,7 @@ class repo {
         ensure      => present,
         provider    => git,
         source      => $GIT_API,
-        revision    => 'master',
+        revision    => 'trimet_working',
     }
 
     vcsrepo { '/vagrant/data':
@@ -18,7 +18,7 @@ class repo {
         ensure      => present,
         provider    => git,
         source      => $GIT_DATA,
-        revision    => 'master',
+        revision    => 'trimet_working',
     }
 
     file { '/var/www': 

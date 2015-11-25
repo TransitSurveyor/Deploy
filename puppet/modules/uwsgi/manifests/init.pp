@@ -35,10 +35,10 @@ class uwsgi {
     
     file { "/var/log/uwsgi.log":
         ensure => present,
-        owner => "api-user",
+        owner => "onoff",
         group => "survey",
         mode => "0755",
-        require => User["api-user"],
+        require => User["onoff"],
     }
     
     service { "uwsgi":
