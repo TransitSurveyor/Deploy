@@ -24,3 +24,5 @@ puppet apply /vagrant/puppet/setup.pp
 
 # build database
 /vagrant/scripts/build_db.sh
+
+service uwsgi start
