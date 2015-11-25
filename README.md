@@ -30,3 +30,13 @@ find an `api` and `data` folder inside this directory.
 that is the code running on the vm.
 + `data` contains a [local git repo](https://github.com/TransitSurveyor/Data)
 that is the code to build data dependencies.
+
+### tests
+
+There are a couple basic test cases to run after the vm is succesfully built
+
+```
+vagrant ssh
+sudo su -c "python /vagrant/api/tests.py" onoff
+```
+
