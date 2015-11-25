@@ -1,10 +1,13 @@
 #!/bin/bash
+set -e
 
 # install puppet
 apt-get update
 apt-get install -y puppet
 
 # install required puppet modules
+puppet module install puppetlabs-stdlib
+puppet module install puppetlabs-postgresql
 puppet module install puppetlabs-vcsrepo
 
 # disable password logins
@@ -18,3 +21,6 @@ cp -r /vagrant/puppet/modules/* /etc/puppet/modules
 
 # apply puppet configuration locally
 puppet apply /vagrant/puppet/setup.pp
+
+# build database
+/vagrant/scripts/build_db.sh
